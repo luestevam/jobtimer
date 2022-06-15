@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503683184484",
+    "project_id": "horas-trabalho-w7",
+    "storage_bucket": "horas-trabalho-w7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503683184484:android:c2cae1ae7952bc0d1b2c71",
+        "android_client_info": {
+          "package_name": "br.com.academiadoflutter.job_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503683184484-70gt5epgof2hrcabho3n4t2jvgsp89a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuNKmy8KrZUiaD_Hlix-ksFtBhfKdZVKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503683184484-70gt5epgof2hrcabho3n4t2jvgsp89a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
