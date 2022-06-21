@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:job_time/app/modules/home/widgets/header_projects_menu.dart';
 
-import '../../core/ui/database/database.dart';
-import 'package:job_time/app/entities/project.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -76,22 +73,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-/*children: [
-          Container(),
-          ElevatedButton(
-            onPressed: () async {
-              final db = Modular.get<Database>();
-
-              final connection = await db.openConnection();
-              connection.writeTxn((isar) {
-                var project = Project();
-                project.name = 'Projeto Teste';
-                project.status = ProjectStatus.em_andamento;
-
-                return connection.projects.put(project);
-              });
-            },
-            child: const Text('Cadastrar'),
-          ),
-        ],*/

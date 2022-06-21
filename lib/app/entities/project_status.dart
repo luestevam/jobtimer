@@ -1,4 +1,5 @@
 enum ProjectStatus {
+  n_iniciado(label: 'Não Iniciado'),
   em_andamento(label: 'Em Andamento'),
   finalizado(label: 'Finalizado');
 
