@@ -1,8 +1,10 @@
-import 'package:job_time/app/modules/repositories/projects/project_repository.dart';
-import 'package:job_time/app/modules/services/view_models/project_model.dart';
-import '../../../entities/project.dart';
+import 'package:job_time/app/modules/services/projects/project_service.dart';
 
-class ProjectServiceImpl {
+import '../../../entities/project.dart';
+import '../../repositories/projects/project_repository.dart';
+import '../view_models/project_model.dart';
+
+class ProjectServiceImpl implements ProjectService {
   final ProjectRepository _projectRepository;
 
   ProjectServiceImpl({

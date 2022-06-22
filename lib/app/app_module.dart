@@ -8,9 +8,9 @@ import 'package:job_time/app/modules/repositories/projects/project_repository_im
 import 'package:job_time/app/modules/services/auth/auth_service_impl.dart';
 import 'package:job_time/app/modules/services/auth/auth_services.dart';
 import 'package:job_time/app/modules/services/projects/project_service.dart';
+import 'package:job_time/app/modules/services/projects/project_service_impl.dart';
 import 'package:job_time/app/modules/splash/splash_page.dart';
 import 'modules/repositories/projects/project_repository.dart';
-import 'modules/services/projects/project_service_impl.dart';
 
 class AppModule extends Module {
   @override
@@ -18,8 +18,9 @@ class AppModule extends Module {
         Bind.lazySingleton<AuthService>((i) => AuthServiceImpl()),
         Bind.lazySingleton<Database>((i) => DatabaseImpl()),
         Bind.lazySingleton<ProjectRepository>(
-          (i) => ProjectRepositoryImpl(database: i()),
-        ),
+            (i) => ProjectRepositoryImpl(database: i())),
+        Bind.lazySingleton<ProjectService>(
+            (i) => ProjectServiceImpl(projectRepository: i())),
       ];
 
   @override

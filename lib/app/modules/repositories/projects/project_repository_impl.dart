@@ -2,9 +2,8 @@ import 'dart:developer' as developer;
 
 import 'package:isar/isar.dart';
 import 'package:job_time/app/entities/project.dart';
-
 import '../../../core/database/database.dart';
-import '../../../core/ui/exceptions/failure.dart';
+import '../../../core/exceptions/failure.dart';
 import '../../../entities/project_status.dart';
 import '../../../entities/project_task.dart';
 import 'project_repository.dart';
@@ -23,8 +22,8 @@ class ProjectRepositoryImpl implements ProjectRepository {
         return isar.projects.put(project);
       });
     } on IsarError catch (e, s) {
-      developer.log('Error to sign project', error: e, stackTrace: s);
-      throw Failure(message: 'Error to sign project');
+      developer.log('Erro ao cadastrar projeto', error: e, stackTrace: s);
+      throw Failure(message: 'Erro ao cadastrar projeto');
     }
   }
 

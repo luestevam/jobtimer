@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:job_time/app/modules/project/register/controller/project_register_controller.dart';
 import 'package:validatorless/validatorless.dart';
 
 class ProjectRegisterPage extends StatefulWidget {
-  const ProjectRegisterPage({Key? key}) : super(key: key);
+  final ProjectRegisterController controller;
+
+  const ProjectRegisterPage({super.key, required this.controller});
 
   @override
   State<ProjectRegisterPage> createState() => _ProjectRegisterPageState();
